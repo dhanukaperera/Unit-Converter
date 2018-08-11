@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Weight-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="UnitConverter" customModuleProvider="target" sceneMemberID="viewController">
@@ -85,13 +85,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Weight" image="first" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Second-->
+        <!--Temperature-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="UnitConverter" customModuleProvider="target" sceneMemberID="viewController">
@@ -152,13 +152,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Temperature" image="second" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
-        <!--Item-->
+        <!--Speed-->
         <scene sceneID="i91-gD-HoK">
             <objects>
                 <viewController id="FQF-Zw-ha7" sceneMemberID="viewController">
@@ -233,13 +233,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="PxH-h1-Dpj"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="first" id="akJ-qU-XzR"/>
+                    <tabBarItem key="tabBarItem" title="Speed" image="first" id="akJ-qU-XzR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jl-oQ-Oug" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="340" y="1074.5127436281859"/>
         </scene>
-        <!--Item-->
+        <!--Distance-->
         <scene sceneID="6hi-NO-scx">
             <objects>
                 <viewController id="rgo-QZ-qiR" sceneMemberID="viewController">
@@ -328,7 +328,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gwH-mP-nWg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="pME-uD-6dO"/>
+                    <tabBarItem key="tabBarItem" title="Distance" id="pME-uD-6dO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXz-tY-yk1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
