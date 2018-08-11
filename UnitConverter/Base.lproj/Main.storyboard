@@ -85,7 +85,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Weight" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Weight" image="weight" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,7 +152,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Temperature" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Temperature" image="temparature" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,7 +233,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="PxH-h1-Dpj"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Speed" image="first" id="akJ-qU-XzR"/>
+                    <tabBarItem key="tabBarItem" title="Speed" image="speed" id="akJ-qU-XzR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jl-oQ-Oug" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -328,7 +328,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gwH-mP-nWg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Distance" id="pME-uD-6dO"/>
+                    <tabBarItem key="tabBarItem" title="Distance" image="distance" id="pME-uD-6dO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXz-tY-yk1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -356,7 +356,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="distance" width="32" height="32"/>
+        <image name="speed" width="32" height="32"/>
+        <image name="temparature" width="32" height="32"/>
+        <image name="weight" width="32" height="32"/>
     </resources>
 </document>
