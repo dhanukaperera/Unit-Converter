@@ -13,6 +13,7 @@
 		F6528318211DF197009CFC10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6528316211DF197009CFC10 /* Main.storyboard */; };
 		F652831A211DF198009CFC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6528319211DF198009CFC10 /* Assets.xcassets */; };
 		F652831D211DF198009CFC10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F652831B211DF198009CFC10 /* LaunchScreen.storyboard */; };
+		F682ED622125096C003EB66B /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682ED612125096C003EB66B /* Temperature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F6528319211DF198009CFC10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F652831C211DF198009CFC10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F652831E211DF198009CFC10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F682ED612125096C003EB66B /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				F6528319211DF198009CFC10 /* Assets.xcassets */,
 				F652831B211DF198009CFC10 /* LaunchScreen.storyboard */,
 				F652831E211DF198009CFC10 /* Info.plist */,
+				F682ED612125096C003EB66B /* Temperature.swift */,
 			);
 			path = UnitConverter;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				F6528315211DF197009CFC10 /* TeperatureViewController.swift in Sources */,
 				F6528311211DF197009CFC10 /* AppDelegate.swift in Sources */,
+				F682ED622125096C003EB66B /* Temperature.swift in Sources */,
 				F6528313211DF197009CFC10 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

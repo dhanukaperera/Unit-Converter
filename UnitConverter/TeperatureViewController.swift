@@ -14,11 +14,40 @@ class TeperatureViewController: UIViewController {
     @IBOutlet weak var txtFahrenheit: UITextField!
     @IBOutlet weak var txtKelvin: UITextField!
     
+    let temp = Temperature()
+    
     @IBAction func celsiusTextChanged(_ sender: UITextField) {
-        print("you typed \(String(describing: txtCelsius.text))" )
+     
+       // let cel   = Float32(txtCelsius.text!)
+       // txtKelvin.text = String(temp.convertCtoK(C: (cel!)))
+      
     }
+    
+//    @IBAction func convert(_ sender: UITextField) {
+//       // let cel   = Float32(txtFahrenheit.text!)
+//       // txtKelvin.text = String(temp.convertCtoK(C: (cel!)))
+//    }
+    
+   
+    @IBAction func ccc(_ sender: UITextField) {
+        let cel   = Float32(txtCelsius.text!)
+       txtKelvin.text = String(temp.convertCtoK(C: (cel!)))
+        
+        txtFahrenheit.text = String(temp.convertCtoF(C: (cel!)))
+        
+    }
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        txtCelsius.text = "0"
+        txtFahrenheit.text = "0"
+        txtKelvin.text = "0"
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

@@ -127,7 +127,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
-                                    <action selector="celsiusTextChanged:" destination="8rJ-Kc-sve" eventType="editingChanged" id="cr3-sf-mC0"/>
+                                    <action selector="ccc:" destination="8rJ-Kc-sve" eventType="editingChanged" id="3rA-5r-ufH"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f00-ev-FRQ">
