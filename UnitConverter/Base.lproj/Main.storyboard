@@ -137,6 +137,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="clearFahrenheit:" destination="8rJ-Kc-sve" eventType="touchDown" id="grV-N0-q1s"/>
+                                    <action selector="convertFToOther:" destination="8rJ-Kc-sve" eventType="editingChanged" id="TiS-E3-K6K"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PeP-mo-88L">
                                 <rect key="frame" x="228" y="200" width="130" height="30"/>

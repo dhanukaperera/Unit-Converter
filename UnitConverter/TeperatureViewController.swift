@@ -16,19 +16,6 @@ class TeperatureViewController: UIViewController {
     
     let temp = Temperature()
     
-    @IBAction func celsiusTextChanged(_ sender: UITextField) {
-     
-       // let cel   = Float32(txtCelsius.text!)
-       // txtKelvin.text = String(temp.convertCtoK(C: (cel!)))
-      
-    }
-    
-//    @IBAction func convert(_ sender: UITextField) {
-//       // let cel   = Float32(txtFahrenheit.text!)
-//       // txtKelvin.text = String(temp.convertCtoK(C: (cel!)))
-//    }
-    
-   
     @IBAction func ccc(_ sender: UITextField) {
         var cel   = Float32(txtCelsius.text!)
         
@@ -41,11 +28,25 @@ class TeperatureViewController: UIViewController {
         
     }
     
-  
+    @IBAction func convertFToOther(_ sender: UITextField) {
+        var fahrenheit   = Float32(txtFahrenheit.text!)
+        
+        if fahrenheit == nil {
+            fahrenheit = 0.0
+        }
+        
+        txtCelsius.text = String(temp.convertFtoC(F: (fahrenheit)!))
+        txtKelvin.text = String(temp.convertFtoK(F: (fahrenheit)!))
+
+    }
+    
     @IBAction func aaa(_ sender: UITextField) {
         txtCelsius.text = ""
     }
     
+    @IBAction func clearFahrenheit(_ sender: UITextField) {
+         txtFahrenheit.text = ""
+    }
     
     
     override func viewDidLoad() {
