@@ -41,15 +41,19 @@ class TeperatureViewController: UIViewController {
         
     }
     
+  
+    @IBAction func aaa(_ sender: UITextField) {
+        txtCelsius.text = ""
+    }
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        txtCelsius.text = "0"
-//        txtFahrenheit.text = "0"
-//        txtKelvin.text = "0"
+        txtCelsius.text = "0"
+        txtFahrenheit.text = "0"
+        txtKelvin.text = "0"
         
         
         // Do any additional setup after loading the view, typically from a nib.
