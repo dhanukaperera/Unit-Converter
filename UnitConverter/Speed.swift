@@ -10,6 +10,20 @@ import Foundation
 
 class Speed {
     
+    // Creating Singleton object of the Speed class
+    private static var speedInstance: Speed = {
+        let speed = Speed()
+        return speed
+    }()
+    
+    // private initializer
+    private init(){}
+    
+    // returning the Singleton Speed object
+    class func getInstance() ->Speed {
+        return speedInstance
+    }
+    
     // Meters per seconds convertions
     func convertMeterPerSecToFeetPerMin(mps:Float32) -> Float32 {
         return mps * 196.85
