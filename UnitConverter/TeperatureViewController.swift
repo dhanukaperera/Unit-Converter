@@ -27,7 +27,7 @@ class TeperatureViewController: UIViewController {
     }
     
     // Update the convertions in EditText Action
-    @IBAction func ccc(_ sender: UITextField) {
+    @IBAction func convertCelsiusToOtherUnits(_ sender: UITextField) {
         if !(txtCelsius.text!.isEmpty) {
             let cel   = Float32(txtCelsius.text!)
             txtKelvin.text = String(temperature.convertCtoK(C: (cel)!))
@@ -35,7 +35,7 @@ class TeperatureViewController: UIViewController {
         }
     }
     
-    @IBAction func convertFToOther(_ sender: UITextField) {
+    @IBAction func convertFahrenheitToOtherUnits(_ sender: UITextField) {
         if !(txtFahrenheit.text!.isEmpty) {
             let fahrenheit   = Float32(txtFahrenheit.text!)
             txtCelsius.text = String(temperature.convertFtoC(F: (fahrenheit)!))
@@ -43,7 +43,7 @@ class TeperatureViewController: UIViewController {
         }
     }
     
-    @IBAction func convertKToOther(_ sender: UITextField) {
+    @IBAction func convertKelvinToOtherUnits(_ sender: UITextField) {
         if !(txtKelvin.text!.isEmpty) {
             let kelvin   = Float32(txtKelvin.text!)
             txtCelsius.text = String(temperature.convertKtoC(K: (kelvin)!))
@@ -52,7 +52,7 @@ class TeperatureViewController: UIViewController {
     }
     
     // Clear Text Fields
-    @IBAction func aaa(_ sender: UITextField) {
+    @IBAction func clearCelsius(_ sender: UITextField) {
         txtCelsius.text = ""
     }
     

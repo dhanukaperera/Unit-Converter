@@ -149,8 +149,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
-                                    <action selector="aaa:" destination="8rJ-Kc-sve" eventType="touchDown" id="1VC-3H-Pk4"/>
-                                    <action selector="ccc:" destination="8rJ-Kc-sve" eventType="editingChanged" id="mdl-aG-Ui8"/>
+                                    <action selector="clearCelsius:" destination="8rJ-Kc-sve" eventType="touchDown" id="1VC-3H-Pk4"/>
+                                    <action selector="convertCelsiusToOtherUnits:" destination="8rJ-Kc-sve" eventType="editingChanged" id="mdl-aG-Ui8"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f00-ev-FRQ">
@@ -161,7 +161,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="clearFahrenheit:" destination="8rJ-Kc-sve" eventType="touchDown" id="grV-N0-q1s"/>
-                                    <action selector="convertFToOther:" destination="8rJ-Kc-sve" eventType="editingChanged" id="TiS-E3-K6K"/>
+                                    <action selector="convertFahrenheitToOtherUnits:" destination="8rJ-Kc-sve" eventType="editingChanged" id="TiS-E3-K6K"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PeP-mo-88L">
@@ -172,7 +172,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="clearKelvin:" destination="8rJ-Kc-sve" eventType="touchDown" id="1Vt-Dl-JMO"/>
-                                    <action selector="convertKToOther:" destination="8rJ-Kc-sve" eventType="editingChanged" id="Xkp-LM-1ar"/>
+                                    <action selector="convertKelvinToOtherUnits:" destination="8rJ-Kc-sve" eventType="editingChanged" id="Xkp-LM-1ar"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZG-lD-3qs">
