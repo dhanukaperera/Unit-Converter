@@ -19,7 +19,7 @@ class SpeedViewController: UIViewController {
     
     
     @IBAction func convertMpsToOther(_ sender: UITextField) {
-        var mps = Float32(txtMph.text!)
+        var mps = Float32(txtMps.text!)
         
         if mps == nil {
             mps = 0.0
@@ -38,7 +38,7 @@ class SpeedViewController: UIViewController {
             fpm = 0.0
         }
         
-        txtFpm.text = String(speed.convertFeetPerMinToMeterPerSec(fpm: fpm!))
+        txtMps.text = String(speed.convertFeetPerMinToMeterPerSec(fpm: fpm!))
         txtKmph.text = String(speed.convertFeetPerMinToKmPerHour(fpm: fpm!))
         txtMph.text = String(speed.convertFeetPerMinToMilesPerHour(fpm: fpm!))
         
@@ -52,7 +52,7 @@ class SpeedViewController: UIViewController {
             kph = 0.0
         }
         
-        txtMph.text = String(speed.convertKmPerHourToMeterPerSec(kmps: kph!))
+        txtMps.text = String(speed.convertKmPerHourToMeterPerSec(kmps: kph!))
         txtFpm.text = String(speed.convertKmPerHourToFeetPerMin(kmps: kph!))
         txtMph.text = String(speed.convertKmPerHourToMilesPerHour(kmps: kph!))
 
@@ -65,7 +65,27 @@ class SpeedViewController: UIViewController {
             mph = 0.0
         }
         
-       // txtMph.text = String(speed.milesPerHourToMetersPerSec)
+        txtMps.text = String(speed.convertMilesPerHourToMetersPerSec(mph: mph!))
+        txtFpm.text = String(speed.convertMilesPerHourToFeetPerMin(mph: mph!))
+        txtKmph.text = String(speed.convertMilesPerHourToKmPerHour(mph: mph!))
+
+    }
+    
+    
+    @IBAction func clearMps(_ sender: UITextField) {
+        txtMps.text = ""
+    }
+    
+    @IBAction func clearFpm(_ sender: UITextField) {
+        txtFpm.text = ""
+    }
+    
+    @IBAction func clearKmph(_ sender: UITextField) {
+        txtKmph.text = ""
+    }
+    
+    @IBAction func clearMph(_ sender: UITextField) {
+        txtMph.text = ""
     }
     
     override func viewDidLoad() {
