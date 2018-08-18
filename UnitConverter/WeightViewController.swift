@@ -34,9 +34,9 @@ class WeightViewController: UIViewController {
             grams = 0.0
         }
         
-        txtKg.text = String(weights.convertGtoKg(g: grams))
-        txtPound.text = String(weights.convertGtoPound(g: grams))
-        txtOunce.text = String(weights.convertGToOunce(g: grams))
+        txtKg.text = String(weights.convertGtoKg(g: grams!))
+        txtPound.text = String(weights.convertGtoPound(g: grams!))
+        txtOunce.text = String(weights.convertGtoOunce(g: grams!))
     }
     
     @IBAction func convertKgToOtherUnits(_ sender: UITextField) {
@@ -46,34 +46,34 @@ class WeightViewController: UIViewController {
             kg = 0.00
         }
         
-        txtGram.text = String(weights.convertKgToG(kg: kg))
-        txtPound.text = String(weights.convertKgToPounds(kg: kg))
-        txtOunce.text = String(weights.convertKgToOunce(kg: kg))
+        txtGram.text = String(weights.convertKgToG(kg: kg!))
+        txtPound.text = String(weights.convertKgtoPounds(kg: kg!))
+        txtOunce.text = String(weights.convertKgToOunce(kg: kg!))
         
     }
     
     @IBAction func convertPoundToOtherUnits(_ sender: UITextField) {
-        var pound = Float32(txtPound.text)
+        var pound = Float32(txtPound.text!)
         
         if pound == nil {
             pound = 0
         }
         
-        txtGram.text = String(weights.convertPoundsToG(pounds: pound))
-        txtKg.text = String(weights.convertPoundsToKg(pounds: pound))
-        txtOunce.text = String(weights.convertPoundsToOunce(pounds: pound))
+        txtGram.text = String(weights.convertPoundsToG(pounds: pound!))
+        txtKg.text = String(weights.convertPoundsToKg(pounds: pound!))
+        txtOunce.text = String(weights.convertPoundsToOunce(pounds: pound!))
     }
     
     @IBAction func convertOunceToOtherUnits(_ sender: UITextField) {
-        var ounce = Float32(txtOunce.text)
+        var ounce = Float32(txtOunce.text!)
         
         if ounce == nil {
             ounce = 0.0
         }
         
-        txtGram.text = String(weights.convertOunceToG(ounce: ounce))
-        txtKg.text = String(weights.convertOunceToKg(ounce: ounce))
-        txtPound.text = String(weights.convertOunceToPounds(ounce: ounce))
+        txtGram.text = String(weights.convertOunceToG(ounce: ounce!))
+        txtKg.text = String(weights.convertOunceToKg(ounce: ounce!))
+        txtPound.text = String(weights.convertOunceToPounds(ounce: ounce!))
     }
     
     @IBAction func clearGram(_ sender: UITextField) {
