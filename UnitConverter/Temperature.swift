@@ -9,15 +9,7 @@
 import Foundation
 
 class Temperature{
-    let celsius : Float32;
-    let fahrenheit : Float32
-    let kelvin : Float32
-    
-    init() {
-        self.celsius = 0.0
-        self.fahrenheit = 0.0
-        self.kelvin = 0.0
-    }
+  
     // celsius converstions
     func convertCtoF(C:Float32) -> Float32 {
         return C*(9/5)+32
