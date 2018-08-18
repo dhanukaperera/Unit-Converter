@@ -349,6 +349,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="clearMetre:" destination="rgo-QZ-qiR" eventType="touchDown" id="ojf-yb-FlV"/>
+                                    <action selector="convertMeterToOther:" destination="rgo-QZ-qiR" eventType="editingChanged" id="y76-Z3-UcK"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JZ0-oj-I95">
                                 <rect key="frame" x="230" y="150" width="130" height="30"/>
@@ -356,6 +360,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="clearFoot:" destination="rgo-QZ-qiR" eventType="touchDown" id="Dpa-ty-faz"/>
+                                    <action selector="convertFootToOther:" destination="rgo-QZ-qiR" eventType="editingChanged" id="KXi-LV-JhP"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cvD-7S-IFs">
                                 <rect key="frame" x="230" y="250" width="130" height="30"/>
@@ -363,6 +371,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="clearKm:" destination="rgo-QZ-qiR" eventType="touchDown" id="0uh-Lp-KOF"/>
+                                    <action selector="convertKmToOtherUnits:" destination="rgo-QZ-qiR" eventType="editingChanged" id="WdV-hB-aHF"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aNs-by-tCm">
                                 <rect key="frame" x="228" y="300" width="130" height="30"/>
@@ -370,6 +382,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="clearMile:" destination="rgo-QZ-qiR" eventType="touchDown" id="hvj-qE-bOO"/>
+                                    <action selector="convertMileToOtherUnits:" destination="rgo-QZ-qiR" eventType="editingChanged" id="ZCG-io-K7m"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RNX-X1-IB1">
                                 <rect key="frame" x="228" y="200" width="130" height="30"/>
@@ -377,6 +393,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="clearYard:" destination="rgo-QZ-qiR" eventType="touchDown" id="TeX-au-2Nw"/>
+                                    <action selector="convertYardToOtherUnits:" destination="rgo-QZ-qiR" eventType="editingChanged" id="H8d-WM-ZeN"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yf-fF-MMQ">
                                 <rect key="frame" x="16" y="300" width="32" height="21"/>
