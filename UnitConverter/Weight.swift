@@ -8,7 +8,21 @@
 
 import Foundation
 
-class Weight{
+class Weight {
+    
+    // Creating Singleton object of the Weight class
+    private static var weightInstance: Weight = {
+        let weight = Weight()
+        return weight
+    }()
+
+    // private initializer
+    private init(){}
+    
+    // returning the Singleton Weight object
+    class func getInstance() ->Weight {
+        return weightInstance
+    }
     
     // Gram to other units
     func convertGtoKg(g : Float32) -> Float32 {

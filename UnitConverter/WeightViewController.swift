@@ -10,12 +10,14 @@ import UIKit
 
 class WeightViewController: UIViewController {
 
+    // Create IBOutlets for TextFields
     @IBOutlet weak var txtGram: UITextField!
     @IBOutlet weak var txtKg: UITextField!
     @IBOutlet weak var txtPound: UITextField!
     @IBOutlet weak var txtOunce: UITextField!
     
-    let weights = Weight()
+    // Get the Singleton Weight Instance
+    let weights = Weight.getInstance()
     
     override func viewDidLoad() {
         super.viewDidLoad()
