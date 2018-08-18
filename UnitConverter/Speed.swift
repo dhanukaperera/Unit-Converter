@@ -50,15 +50,15 @@ class Speed {
     }
     
     // Miles per hour convertions
-    func milesPerHourToMetersPerSec(mph:Float32) -> Float32 {
+    func convertMilesPerHourToMetersPerSec(mph:Float32) -> Float32 {
         return mph * 0.44704
     }
     
-    func milesPerHourToFeetPerMin(mph:Float32) -> Float32{
+    func convertMilesPerHourToFeetPerMin(mph:Float32) -> Float32{
         return mph * 88
     }
     
-    func milesPerHourToKmPerHour (mph:Float32) -> Float32 {
+    func convertMilesPerHourToKmPerHour (mph:Float32) -> Float32 {
         return mph * 1.60934
     }
     
