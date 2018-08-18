@@ -239,6 +239,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="convertMpsToOther:" destination="FQF-Zw-ha7" eventType="editingChanged" id="deq-lh-qUC"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tkY-pY-cKn">
                                 <rect key="frame" x="230" y="150" width="130" height="30"/>
@@ -246,6 +249,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="convertFpmToOther:" destination="FQF-Zw-ha7" eventType="editingChanged" id="8jv-Pa-33S"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgf-J0-oyX">
                                 <rect key="frame" x="230" y="250" width="130" height="30"/>
@@ -253,6 +259,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="convertToMphToOther:" destination="FQF-Zw-ha7" eventType="editingChanged" id="bJC-dB-J4X"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ehu-rZ-Yi4">
                                 <rect key="frame" x="228" y="200" width="130" height="30"/>
@@ -260,6 +269,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="convertKphToOther:" destination="FQF-Zw-ha7" eventType="editingChanged" id="jgv-FT-HGM"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Miles per hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jd6-jY-mEO">
                                 <rect key="frame" x="16" y="250" width="110" height="21"/>
@@ -273,6 +285,12 @@
                         <viewLayoutGuide key="safeArea" id="PxH-h1-Dpj"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Speed" image="speed" id="akJ-qU-XzR"/>
+                    <connections>
+                        <outlet property="txtFpm" destination="tkY-pY-cKn" id="nlw-uA-u2q"/>
+                        <outlet property="txtKmph" destination="ehu-rZ-Yi4" id="XXV-sY-G1v"/>
+                        <outlet property="txtMph" destination="wgf-J0-oyX" id="4er-Bh-6g1"/>
+                        <outlet property="txtMps" destination="ENP-eo-RNw" id="tyl-Xm-UQ5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jl-oQ-Oug" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
