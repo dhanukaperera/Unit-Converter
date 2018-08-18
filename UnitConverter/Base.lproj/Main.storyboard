@@ -200,7 +200,7 @@
         <!--Speed-->
         <scene sceneID="i91-gD-HoK">
             <objects>
-                <viewController id="FQF-Zw-ha7" sceneMemberID="viewController">
+                <viewController id="FQF-Zw-ha7" customClass="SpeedViewController" customModule="UnitConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="klE-cY-uOf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
