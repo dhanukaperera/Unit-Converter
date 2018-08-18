@@ -10,48 +10,48 @@ import UIKit
 
 class TeperatureViewController: UIViewController {
 
+    // Create IBOutlets for TextFields
     @IBOutlet weak var txtCelsius: UITextField!
     @IBOutlet weak var txtFahrenheit: UITextField!
     @IBOutlet weak var txtKelvin: UITextField!
     
-    let temp = Temperature.getInstance()
+    // Get the Singleton Temperature Instance
+    let temperature = Temperature.getInstance()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    // Update the convertions in EditText Action
     @IBAction func ccc(_ sender: UITextField) {
-        var cel   = Float32(txtCelsius.text!)
-        
-        if cel == nil {
-            cel = 0.0
+        if !(txtCelsius.text!.isEmpty) {
+            let cel   = Float32(txtCelsius.text!)
+            txtKelvin.text = String(temperature.convertCtoK(C: (cel)!))
+            txtFahrenheit.text = String(temperature.convertCtoF(C: ((cel))!))
         }
-        
-        txtKelvin.text = String(temp.convertCtoK(C: (cel)!))
-        txtFahrenheit.text = String(temp.convertCtoF(C: ((cel))!))
-        
     }
     
     @IBAction func convertFToOther(_ sender: UITextField) {
-        var fahrenheit   = Float32(txtFahrenheit.text!)
-        
-        if fahrenheit == nil {
-            fahrenheit = 0.0
+        if !(txtFahrenheit.text!.isEmpty) {
+            let fahrenheit   = Float32(txtFahrenheit.text!)
+            txtCelsius.text = String(temperature.convertFtoC(F: (fahrenheit)!))
+            txtKelvin.text = String(temperature.convertFtoK(F: (fahrenheit)!))
         }
-        
-        txtCelsius.text = String(temp.convertFtoC(F: (fahrenheit)!))
-        txtKelvin.text = String(temp.convertFtoK(F: (fahrenheit)!))
-
     }
     
     @IBAction func convertKToOther(_ sender: UITextField) {
-        var kelvin   = Float32(txtKelvin.text!)
-        
-        if kelvin == nil {
-            kelvin = 0.0
+        if !(txtKelvin.text!.isEmpty) {
+            let kelvin   = Float32(txtKelvin.text!)
+            txtCelsius.text = String(temperature.convertKtoC(K: (kelvin)!))
+            txtFahrenheit.text = String(temperature.convertKtoF(K: (kelvin)!))
         }
-        
-        txtCelsius.text = String(temp.convertKtoC(K: (kelvin)!))
-        txtFahrenheit.text = String(temp.convertKtoF(K: (kelvin)!))
-
     }
     
+    // Clear Text Fields
     @IBAction func aaa(_ sender: UITextField) {
         txtCelsius.text = ""
     }
@@ -64,13 +64,5 @@ class TeperatureViewController: UIViewController {
         txtKelvin.text = ""
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
 }
 
