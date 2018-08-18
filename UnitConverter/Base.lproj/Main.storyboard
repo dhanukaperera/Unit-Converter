@@ -390,6 +390,13 @@
                         <viewLayoutGuide key="safeArea" id="gwH-mP-nWg"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Distance" image="distance" id="pME-uD-6dO"/>
+                    <connections>
+                        <outlet property="txtFoot" destination="JZ0-oj-I95" id="R9y-oT-898"/>
+                        <outlet property="txtKm" destination="cvD-7S-IFs" id="gpq-Yl-sTI"/>
+                        <outlet property="txtMetre" destination="obk-Ry-V6f" id="UVD-E8-RgF"/>
+                        <outlet property="txtMile" destination="aNs-by-tCm" id="fiP-Ie-iSJ"/>
+                        <outlet property="txtYard" destination="RNX-X1-IB1" id="uJl-lQ-kcG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXz-tY-yk1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
