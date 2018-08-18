@@ -241,7 +241,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="clearMps:" destination="FQF-Zw-ha7" eventType="touchDown" id="xSb-OT-eTy"/>
-                                    <action selector="convertMpsToOther:" destination="FQF-Zw-ha7" eventType="editingChanged" id="deq-lh-qUC"/>
+                                    <action selector="convertMpsToOtherUnits:" destination="FQF-Zw-ha7" eventType="editingChanged" id="deq-lh-qUC"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tkY-pY-cKn">
@@ -252,7 +252,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="clearFpm:" destination="FQF-Zw-ha7" eventType="touchDown" id="Elv-ga-gY4"/>
-                                    <action selector="convertFpmToOther:" destination="FQF-Zw-ha7" eventType="editingChanged" id="8jv-Pa-33S"/>
+                                    <action selector="convertFpmToOtherUnits:" destination="FQF-Zw-ha7" eventType="editingChanged" id="8jv-Pa-33S"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgf-J0-oyX">
@@ -263,7 +263,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="clearMph:" destination="FQF-Zw-ha7" eventType="touchDown" id="Jx6-Jz-W1Y"/>
-                                    <action selector="convertToMphToOther:" destination="FQF-Zw-ha7" eventType="editingChanged" id="bJC-dB-J4X"/>
+                                    <action selector="convertToMphToOtherUnits:" destination="FQF-Zw-ha7" eventType="editingChanged" id="bJC-dB-J4X"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ehu-rZ-Yi4">
@@ -274,7 +274,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="clearKmph:" destination="FQF-Zw-ha7" eventType="touchDown" id="ZFf-QS-FpL"/>
-                                    <action selector="convertKphToOther:" destination="FQF-Zw-ha7" eventType="editingChanged" id="jgv-FT-HGM"/>
+                                    <action selector="convertKphToOtherUnits:" destination="FQF-Zw-ha7" eventType="editingChanged" id="jgv-FT-HGM"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Miles per hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jd6-jY-mEO">
@@ -351,7 +351,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="clearMetre:" destination="rgo-QZ-qiR" eventType="touchDown" id="ojf-yb-FlV"/>
-                                    <action selector="convertMeterToOther:" destination="rgo-QZ-qiR" eventType="editingChanged" id="y76-Z3-UcK"/>
+                                    <action selector="convertMeterToOtherUnits:" destination="rgo-QZ-qiR" eventType="editingChanged" id="y76-Z3-UcK"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JZ0-oj-I95">
@@ -362,7 +362,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="clearFoot:" destination="rgo-QZ-qiR" eventType="touchDown" id="Dpa-ty-faz"/>
-                                    <action selector="convertFootToOther:" destination="rgo-QZ-qiR" eventType="editingChanged" id="KXi-LV-JhP"/>
+                                    <action selector="convertFootToOtherUnits:" destination="rgo-QZ-qiR" eventType="editingChanged" id="KXi-LV-JhP"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cvD-7S-IFs">

@@ -27,9 +27,8 @@ class SpeedViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
    
-    
     // Update the convertions in EditText Action
-    @IBAction func convertMpsToOther(_ sender: UITextField) {
+    @IBAction func convertMpsToOtherUnits(_ sender: UITextField) {
         if !(txtMps.text!.isEmpty) {
              let mps = Float32(txtMps.text!)
             txtFpm.text = String(speed.convertMeterPerSecToFeetPerMin(mps: mps!))
@@ -38,7 +37,7 @@ class SpeedViewController: UIViewController {
         }
     }
     
-    @IBAction func convertFpmToOther(_ sender: UITextField) {
+    @IBAction func convertFpmToOtherUnits(_ sender: UITextField) {
         if !(txtFpm.text!.isEmpty) {
              let fpm = Float32(txtFpm.text!)
             txtMps.text = String(speed.convertFeetPerMinToMeterPerSec(fpm: fpm!))
@@ -47,8 +46,7 @@ class SpeedViewController: UIViewController {
         }
     }
     
-    
-    @IBAction func convertKphToOther(_ sender: UITextField) {
+    @IBAction func convertKphToOtherUnits(_ sender: UITextField) {
         if !(txtKmph.text!.isEmpty) {
              let kph = Float32(txtKmph.text!)
             txtMps.text = String(speed.convertKmPerHourToMeterPerSec(kmps: kph!))
@@ -57,7 +55,7 @@ class SpeedViewController: UIViewController {
         }
     }
     
-    @IBAction func convertToMphToOther(_ sender: UITextField) {
+    @IBAction func convertToMphToOtherUnits(_ sender: UITextField) {
         if !(txtMph.text!.isEmpty) {
             let  mph = Float32(txtMph.text!)
             txtMps.text = String(speed.convertMilesPerHourToMetersPerSec(mph: mph!))
@@ -66,7 +64,7 @@ class SpeedViewController: UIViewController {
         }
     }
     
-    
+    // Clear Text Fields
     @IBAction func clearMps(_ sender: UITextField) {
         txtMps.text = ""
     }
@@ -82,7 +80,5 @@ class SpeedViewController: UIViewController {
     @IBAction func clearMph(_ sender: UITextField) {
         txtMph.text = ""
     }
-    
-   
-    
+
 }

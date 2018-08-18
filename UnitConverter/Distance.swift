@@ -10,6 +10,20 @@ import Foundation
 
 class Distance {
     
+    // Creating Singleton object of the Distance class
+    private static var distanceInstance: Distance = {
+        let distance = Distance()
+        return distance
+    }()
+    
+    // private initializer
+    private init(){}
+    
+    // returning the Singleton Distance object
+    class func getInstance() ->Distance {
+        return distanceInstance
+    }
+
     // Metre convertions
     func convertMetretoFoot(m:Float32) -> Float32 {
         return m * 3.28084
