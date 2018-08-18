@@ -10,6 +10,14 @@ import UIKit
 
 class WeightViewController: UIViewController {
 
+    
+    @IBOutlet weak var txtGram: UITextField!
+    @IBOutlet weak var txtKg: UITextField!
+    @IBOutlet weak var txtPound: UITextField!
+    @IBOutlet weak var txtOunce: UITextField!
+    
+    let weights = Weight()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,6 +27,21 @@ class WeightViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func convertGramToOtherUnits(_ sender: UITextField) {
+        
+        var grams = Float32(txtGram.text!)
+        
+        if grams == nil {
+            grams = 0.0
+        }
+        
+        txtKg.text = String(weights.convertGtoKg(g: grams))
+        txtPound.text = String(weights.convertGtoPound(g: grams))
+        txtOunce.text = String(weights.convertGToOunce(g: grams))
+        
+    }
+    
 
 
 }

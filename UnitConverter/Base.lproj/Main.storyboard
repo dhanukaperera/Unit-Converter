@@ -52,6 +52,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="convertGramToOtherUnits:" destination="9pv-A4-QxB" eventType="editingChanged" id="dEh-DF-x9W"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="edd-4b-dhT">
                                 <rect key="frame" x="230" y="150" width="130" height="30"/>
@@ -86,6 +89,12 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Weight" image="weight" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="txtGram" destination="oBL-dH-DcV" id="mGk-ys-xZd"/>
+                        <outlet property="txtKg" destination="edd-4b-dhT" id="kC1-Yz-1eM"/>
+                        <outlet property="txtOunce" destination="hnt-KE-MZl" id="4oL-DZ-2jk"/>
+                        <outlet property="txtPound" destination="4QO-vr-pUp" id="gJz-zN-hPn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
