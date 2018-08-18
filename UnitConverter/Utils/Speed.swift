@@ -52,15 +52,15 @@ class Speed {
     
     // Kilometer per hour converstions
     func convertKmPerHourToMeterPerSec(kmps:Float32) -> Float32 {
-        return kmps * 1000
+        return kmps * 0.277778
     }
     
     func convertKmPerHourToFeetPerMin(kmps:Float32) -> Float32 {
-        return kmps * 196850
+        return kmps * 54.6807
     }
     
     func convertKmPerHourToMilesPerHour(kmps:Float32) -> Float32 {
-        return kmps * 2236.94
+        return kmps * 0.621371
     }
     
     // Miles per hour convertions

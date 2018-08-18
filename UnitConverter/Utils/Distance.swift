@@ -81,7 +81,7 @@ class Distance {
     }
     
     func convertKmToFoot(km:Float32) -> Float32 {
-        return km * 1000
+        return km * 3280.84
     }
     
     func convertKmToYard(km:Float32) -> Float32 {
