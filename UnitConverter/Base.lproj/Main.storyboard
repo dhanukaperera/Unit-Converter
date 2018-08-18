@@ -303,7 +303,7 @@
         <!--Distance-->
         <scene sceneID="6hi-NO-scx">
             <objects>
-                <viewController id="rgo-QZ-qiR" sceneMemberID="viewController">
+                <viewController id="rgo-QZ-qiR" customClass="DispanceViewController" customModule="UnitConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RE5-Hq-d4E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

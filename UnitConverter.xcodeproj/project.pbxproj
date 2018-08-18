@@ -17,6 +17,8 @@
 		F682ED642125FD33003EB66B /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682ED632125FD33003EB66B /* Weight.swift */; };
 		F682ED682127D2AA003EB66B /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682ED672127D2AA003EB66B /* SpeedViewController.swift */; };
 		F682ED6A2127D307003EB66B /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682ED692127D307003EB66B /* Speed.swift */; };
+		F682ED6C2127FA4B003EB66B /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682ED6B2127FA4B003EB66B /* Distance.swift */; };
+		F682ED6E2127FCD8003EB66B /* DispanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682ED6D2127FCD8003EB66B /* DispanceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		F682ED632125FD33003EB66B /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
 		F682ED672127D2AA003EB66B /* SpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
 		F682ED692127D307003EB66B /* Speed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
+		F682ED6B2127FA4B003EB66B /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
+		F682ED6D2127FCD8003EB66B /* DispanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispanceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				F682ED632125FD33003EB66B /* Weight.swift */,
 				F682ED672127D2AA003EB66B /* SpeedViewController.swift */,
 				F682ED692127D307003EB66B /* Speed.swift */,
+				F682ED6B2127FA4B003EB66B /* Distance.swift */,
+				F682ED6D2127FCD8003EB66B /* DispanceViewController.swift */,
 			);
 			path = UnitConverter;
 			sourceTree = "<group>";
@@ -154,9 +160,11 @@
 				F682ED642125FD33003EB66B /* Weight.swift in Sources */,
 				F6528315211DF197009CFC10 /* TeperatureViewController.swift in Sources */,
 				F6528311211DF197009CFC10 /* AppDelegate.swift in Sources */,
+				F682ED6C2127FA4B003EB66B /* Distance.swift in Sources */,
 				F682ED6A2127D307003EB66B /* Speed.swift in Sources */,
 				F682ED622125096C003EB66B /* Temperature.swift in Sources */,
 				F6528313211DF197009CFC10 /* WeightViewController.swift in Sources */,
+				F682ED6E2127FCD8003EB66B /* DispanceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
