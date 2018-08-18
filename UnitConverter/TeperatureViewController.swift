@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  TeperatureViewController.swift
 //  UnitConverter
 //
 //  Created by Dhanuka Perera on 8/10/18.
@@ -14,7 +14,7 @@ class TeperatureViewController: UIViewController {
     @IBOutlet weak var txtFahrenheit: UITextField!
     @IBOutlet weak var txtKelvin: UITextField!
     
-    let temp = Temperature()
+    let temp = Temperature.getInstance()
     
     @IBAction func ccc(_ sender: UITextField) {
         var cel   = Float32(txtCelsius.text!)
@@ -66,20 +66,11 @@ class TeperatureViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        txtCelsius.text = "0"
-        txtFahrenheit.text = "0"
-        txtKelvin.text = "0"
-        
-        
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
 
 }
 

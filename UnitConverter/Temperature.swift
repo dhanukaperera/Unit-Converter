@@ -8,8 +8,22 @@
 
 import Foundation
 
-class Temperature{
+class Temperature {
   
+    // Creating Singleton object of the Temperature class
+    private static var temperatureInstance: Temperature = {
+        let temparature = Temperature()
+        return temparature
+    }()
+    
+    // private initializer
+    private init(){}
+    
+    // returning the Singleton Temperature object
+    class func getInstance() ->Temperature {
+        return temperatureInstance
+    }
+    
     // celsius converstions
     func convertCtoF(C:Float32) -> Float32 {
         return C*(9/5)+32
