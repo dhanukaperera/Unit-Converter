@@ -10,7 +10,6 @@ import UIKit
 
 class WeightViewController: UIViewController {
 
-    
     @IBOutlet weak var txtGram: UITextField!
     @IBOutlet weak var txtKg: UITextField!
     @IBOutlet weak var txtPound: UITextField!
@@ -29,7 +28,6 @@ class WeightViewController: UIViewController {
     }
     
     @IBAction func convertGramToOtherUnits(_ sender: UITextField) {
-        
         var grams = Float32(txtGram.text!)
         
         if grams == nil {
@@ -39,10 +37,22 @@ class WeightViewController: UIViewController {
         txtKg.text = String(weights.convertGtoKg(g: grams))
         txtPound.text = String(weights.convertGtoPound(g: grams))
         txtOunce.text = String(weights.convertGToOunce(g: grams))
+    }
+    
+    @IBAction func convertKgToOtherUnits(_ sender: UITextField) {
+        var kg = Float32(txtKg.text!)
+        
+        if kg == nil {
+            kg = 0.00
+        }
+        
+        txtGram.text = String(weights.convertKgToG(kg: kg))
+        txtPound.text = String(weights.convertKgToPounds(kg: kg))
+        txtOunce.text = String(weights.convertKgToOunce(kg: kg))
         
     }
     
-
-
+    
+    
 }
 
