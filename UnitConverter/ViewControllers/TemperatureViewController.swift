@@ -1,5 +1,5 @@
 //
-//  TeperatureViewController.swift
+//  TemperatureViewController.swift
 //  UnitConverter
 //
 //  Created by Dhanuka Perera on 8/10/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TeperatureViewController: UIViewController {
+class TemperaturerViewController: UIViewController {
 
     // Create IBOutlets for TextFields
     @IBOutlet weak var txtCelsius: UITextField!

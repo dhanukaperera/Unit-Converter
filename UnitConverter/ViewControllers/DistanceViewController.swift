@@ -1,5 +1,5 @@
 //
-//  DispanceViewController.swift
+//  DistanceViewController.swift
 //  UnitConverter
 //
 //  Created by Dhanuka Perera on 8/18/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DispanceViewController: UIViewController {
+class DistanceViewController: UIViewController {
 
     // Create IBOutlets for TextFields
     @IBOutlet weak var txtMetre: UITextField!

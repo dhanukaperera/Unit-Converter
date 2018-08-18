@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F6528311211DF197009CFC10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6528310211DF197009CFC10 /* AppDelegate.swift */; };
 		F6528313211DF197009CFC10 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6528312211DF197009CFC10 /* WeightViewController.swift */; };
-		F6528315211DF197009CFC10 /* TeperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6528314211DF197009CFC10 /* TeperatureViewController.swift */; };
+		F6528315211DF197009CFC10 /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6528314211DF197009CFC10 /* TemperatureViewController.swift */; };
 		F6528318211DF197009CFC10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6528316211DF197009CFC10 /* Main.storyboard */; };
 		F652831A211DF198009CFC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6528319211DF198009CFC10 /* Assets.xcassets */; };
 		F652831D211DF198009CFC10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F652831B211DF198009CFC10 /* LaunchScreen.storyboard */; };
@@ -18,14 +18,14 @@
 		F682ED682127D2AA003EB66B /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682ED672127D2AA003EB66B /* SpeedViewController.swift */; };
 		F682ED6A2127D307003EB66B /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682ED692127D307003EB66B /* Speed.swift */; };
 		F682ED6C2127FA4B003EB66B /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682ED6B2127FA4B003EB66B /* Distance.swift */; };
-		F682ED6E2127FCD8003EB66B /* DispanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682ED6D2127FCD8003EB66B /* DispanceViewController.swift */; };
+		F682ED6E2127FCD8003EB66B /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682ED6D2127FCD8003EB66B /* DistanceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F652830D211DF197009CFC10 /* UnitConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6528310211DF197009CFC10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6528312211DF197009CFC10 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
-		F6528314211DF197009CFC10 /* TeperatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeperatureViewController.swift; sourceTree = "<group>"; };
+		F6528314211DF197009CFC10 /* TemperatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
 		F6528317211DF197009CFC10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6528319211DF198009CFC10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F652831C211DF198009CFC10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 		F682ED672127D2AA003EB66B /* SpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
 		F682ED692127D307003EB66B /* Speed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
 		F682ED6B2127FA4B003EB66B /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
-		F682ED6D2127FCD8003EB66B /* DispanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispanceViewController.swift; sourceTree = "<group>"; };
+		F682ED6D2127FCD8003EB66B /* DistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,21 +68,37 @@
 		F652830F211DF197009CFC10 /* UnitConverter */ = {
 			isa = PBXGroup;
 			children = (
+				F65E045C2128975700F7E1F4 /* Utils */,
 				F6528310211DF197009CFC10 /* AppDelegate.swift */,
-				F6528312211DF197009CFC10 /* WeightViewController.swift */,
-				F6528314211DF197009CFC10 /* TeperatureViewController.swift */,
 				F6528316211DF197009CFC10 /* Main.storyboard */,
 				F6528319211DF198009CFC10 /* Assets.xcassets */,
 				F652831B211DF198009CFC10 /* LaunchScreen.storyboard */,
 				F652831E211DF198009CFC10 /* Info.plist */,
-				F682ED612125096C003EB66B /* Temperature.swift */,
-				F682ED632125FD33003EB66B /* Weight.swift */,
-				F682ED672127D2AA003EB66B /* SpeedViewController.swift */,
-				F682ED692127D307003EB66B /* Speed.swift */,
-				F682ED6B2127FA4B003EB66B /* Distance.swift */,
-				F682ED6D2127FCD8003EB66B /* DispanceViewController.swift */,
+				F65E045B2128970100F7E1F4 /* ViewControllers */,
 			);
 			path = UnitConverter;
+			sourceTree = "<group>";
+		};
+		F65E045B2128970100F7E1F4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F682ED672127D2AA003EB66B /* SpeedViewController.swift */,
+				F6528312211DF197009CFC10 /* WeightViewController.swift */,
+				F6528314211DF197009CFC10 /* TemperatureViewController.swift */,
+				F682ED6D2127FCD8003EB66B /* DistanceViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F65E045C2128975700F7E1F4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F682ED612125096C003EB66B /* Temperature.swift */,
+				F682ED632125FD33003EB66B /* Weight.swift */,
+				F682ED692127D307003EB66B /* Speed.swift */,
+				F682ED6B2127FA4B003EB66B /* Distance.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,13 +174,13 @@
 			files = (
 				F682ED682127D2AA003EB66B /* SpeedViewController.swift in Sources */,
 				F682ED642125FD33003EB66B /* Weight.swift in Sources */,
-				F6528315211DF197009CFC10 /* TeperatureViewController.swift in Sources */,
+				F6528315211DF197009CFC10 /* TemperatureViewController.swift in Sources */,
 				F6528311211DF197009CFC10 /* AppDelegate.swift in Sources */,
 				F682ED6C2127FA4B003EB66B /* Distance.swift in Sources */,
 				F682ED6A2127D307003EB66B /* Speed.swift in Sources */,
 				F682ED622125096C003EB66B /* Temperature.swift in Sources */,
 				F6528313211DF197009CFC10 /* WeightViewController.swift in Sources */,
-				F682ED6E2127FCD8003EB66B /* DispanceViewController.swift in Sources */,
+				F682ED6E2127FCD8003EB66B /* DistanceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
