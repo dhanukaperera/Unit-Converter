@@ -76,7 +76,21 @@ class WeightViewController: UIViewController {
         txtPound.text = String(weights.convertOunceToPounds(ounce: ounce))
     }
     
+    @IBAction func clearGram(_ sender: UITextField) {
+        txtGram.text = ""
+    }
     
+    @IBAction func clearKg(_ sender: UITextField) {
+        txtKg.text = ""
+    }
+    
+    @IBAction func txtPound(_ sender: UITextField) {
+        txtPound.text = ""
+    }
+    
+    @IBAction func clearOunce(_ sender: UITextField) {
+        txtOunce.text = ""
+    }
     
 }
 
