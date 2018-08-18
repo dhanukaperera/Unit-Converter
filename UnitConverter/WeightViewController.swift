@@ -52,6 +52,17 @@ class WeightViewController: UIViewController {
         
     }
     
+    @IBAction func convertPoundToOtherUnits(_ sender: UITextField) {
+        var pound = Float32(txtPound.text)
+        
+        if pound == nil {
+            pound = 0
+        }
+        
+        txtGram.text = String(weights.convertPoundsToG(pounds: pound))
+        txtKg.text = String(weights.convertPoundsToKg(pounds: pound))
+        txtOunce.text = String(weights.convertPoundsToOunce(pounds: pound))
+    }
     
     
 }
