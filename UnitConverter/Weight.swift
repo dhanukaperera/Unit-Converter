@@ -49,5 +49,16 @@ class Weight{
         return pounds * 16
     }
     
-    // 
+    // Ounce to other units
+    func convertOunceToG(ounce:Float32) -> Float32 {
+        return ounce * 28.3495
+    }
+    
+    func  convertOunceToKg(ounce:Float32) -> Float32 {
+        return ounce * 0.0283495
+    }
+    
+    func  convertOunceToPounds(ounce:Float32) -> Float32 {
+        return ounce * 0.0625
+    }
 }
