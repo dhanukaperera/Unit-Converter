@@ -21,6 +21,7 @@ class WeightViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        txtGram.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {

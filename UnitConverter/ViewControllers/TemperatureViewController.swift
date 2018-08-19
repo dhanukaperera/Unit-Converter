@@ -20,6 +20,7 @@ class TemperaturerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        txtCelsius.becomeFirstResponder()
     }
     
     override func didReceiveMemoryWarning() {

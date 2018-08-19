@@ -22,6 +22,7 @@ class DistanceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        txtMetre.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {

@@ -21,6 +21,7 @@ class SpeedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        txtMps.becomeFirstResponder()
     }
     
     override func didReceiveMemoryWarning() {
